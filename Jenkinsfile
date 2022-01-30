@@ -3,7 +3,7 @@ pipeline {
   stages{
     stage('init'){
       steps{
-        terraform init
+        sh label: '', script: 'terraform init'
       }
     }
     stage('build'){
