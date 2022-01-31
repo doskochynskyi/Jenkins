@@ -3,8 +3,8 @@ pipeline {
   stages{
     stage('init'){
       steps{
-        //sh label: '', script: 'terraform init'
-        echo 'init'
+         echo 'init'
+        sh label: '', script: 'terraform init'       
       }
     }
     stage('build'){
