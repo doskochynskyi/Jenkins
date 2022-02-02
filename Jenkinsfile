@@ -14,7 +14,7 @@ pipeline {
         //sh label: '', script: 'terraform init'       
         //sh 'terraform init'
         //sh label: '', script: 'terraform init'
-        bat 'terraform init -upgrade'
+        bat 'terraform init'
         bat 'terraform plan'
       }
     }
